@@ -1,0 +1,9 @@
+<h3>UrbanLadder QnA Bot</h3>
+<%= render 'chats/form'%>
+
+<% @chats.each do |chat|%>
+	<div class="well well-lg">
+		<p><strong><%=chat.username%></strong>&nbsp; :&nbsp; <%=chat.message%> </p>
+	</div>
+
+	<%end%>

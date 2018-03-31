@@ -1,0 +1,16 @@
+
+
+<%=form_for([@chat, @chats.build]) do |f|%>
+<p>
+ 	
+ 	<%f.label :username %>
+ 	<%f.text_field(:username,{:class=>'form-control'}) %>
+ </p>
+ <p>
+ 
+ 	<%=f.label :message %>
+ 	<%=f.text_field(:message,{:class=>'form-control'}) %>
+ </p>
+ <%= f.submit({:class=>'btn btn-primary'})%>
+</p>
+<%end%>
